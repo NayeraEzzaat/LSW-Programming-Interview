@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687b6f912376a344c828d5ee8cd321ab, type: 3}
+  m_Name: Sword_1
+  m_EditorClassIdentifier: 
+  type: 1
+  displaySprite: {fileID: 21300000, guid: d7ab85e6333d5144897b18b2a5f34e3e, type: 3}
+  backSprites:
+  - {fileID: 21300000, guid: e1ee69d53bd12434fa592bd63f568898, type: 3}
+  frontSprites:
+  - {fileID: 21300000, guid: 3bc5ba11fb3814a40a1dd38d5476f5b7, type: 3}
+  leftSprites:
+  - {fileID: 21300000, guid: 5fe1c4291f27d484bb5dc30678475bbe, type: 3}
+  rightSprites:
+  - {fileID: 21300000, guid: b73b43dc65e714b499298412b22f5139, type: 3}
+  bodyPartsTypesBack: 0b000000
+  bodyPartsTypesFront: 0b000000
+  bodyPartsTypesLeft: 0b000000
+  bodyPartsTypesRight: 0b000000

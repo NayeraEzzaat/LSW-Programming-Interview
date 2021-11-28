@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687b6f912376a344c828d5ee8cd321ab, type: 3}
+  m_Name: Armor_1
+  m_EditorClassIdentifier: 
+  type: 2
+  displaySprite: {fileID: 21300000, guid: 87900d6dad904dd4ca96af02000dc632, type: 3}
+  backSprites:
+  - {fileID: 21300000, guid: 8aa9771014d64c748808783953c43b38, type: 3}
+  - {fileID: 21300000, guid: 8263e8a3df8d9a54bbdbe40f17b1359a, type: 3}
+  - {fileID: 21300000, guid: 80100f2930d84b247bc86b79f18e568e, type: 3}
+  - {fileID: 21300000, guid: 21df9d4422db7c945b33ac3f13b4bfa0, type: 3}
+  - {fileID: 21300000, guid: d3c803857f296ed4db22d64ffb94435e, type: 3}
+  frontSprites:
+  - {fileID: 21300000, guid: e11dba0db652a9147984e6b2eb7044a6, type: 3}
+  - {fileID: 21300000, guid: 6efeaed0d9151594dab6a83db631b82c, type: 3}
+  - {fileID: 21300000, guid: d179cb454a2cb0740bd2dfc9f40d42e4, type: 3}
+  - {fileID: 21300000, guid: d5f40126a3f61674bbfd7c40273b4ba7, type: 3}
+  - {fileID: 21300000, guid: edd6e24b3c343ad4cae6302276bab283, type: 3}
+  leftSprites:
+  - {fileID: 21300000, guid: 0905f2bc9d2bcd84abb5d19b1488ff38, type: 3}
+  - {fileID: 21300000, guid: 293409ffa4f4daa4dae01a0531a3a4a7, type: 3}
+  - {fileID: 21300000, guid: 8a926ee98ae38074bb174f4a8407f657, type: 3}
+  - {fileID: 21300000, guid: 293409ffa4f4daa4dae01a0531a3a4a7, type: 3}
+  - {fileID: 21300000, guid: 0905f2bc9d2bcd84abb5d19b1488ff38, type: 3}
+  rightSprites:
+  - {fileID: 21300000, guid: 3e2b0c006296ee742a30cdef888260ac, type: 3}
+  - {fileID: 21300000, guid: 29662d6998d18d84d9e65a4e76cb7e44, type: 3}
+  - {fileID: 21300000, guid: 77bcefedf4db7c7478c45cc956ac694c, type: 3}
+  bodyPartsTypesBack: 0300000002000000000000000500000006000000
+  bodyPartsTypesFront: 0300000002000000000000000500000006000000
+  bodyPartsTypesLeft: 0300000002000000000000000500000006000000
+  bodyPartsTypesRight: 030000000200000000000000
