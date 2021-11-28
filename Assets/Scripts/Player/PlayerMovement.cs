@@ -27,10 +27,25 @@ public class PlayerMovement : MonoBehaviour
         playerAnimator.SetFloat("Vertical", direction.y);
         playerAnimator.SetFloat("Speed", direction.sqrMagnitude);
 
-        backAnimator.SetFloat("Speed", direction.sqrMagnitude);
-        frontAnimator.SetFloat("Speed", direction.sqrMagnitude);
-        leftAnimator.SetFloat("Speed", direction.sqrMagnitude);
-        rightAnimator.SetFloat("Speed", direction.sqrMagnitude);
+        if (backAnimator.gameObject.activeSelf)
+        {
+            backAnimator.SetFloat("Speed", direction.sqrMagnitude);
+        }
+
+        if (frontAnimator.gameObject.activeSelf)
+        {
+            frontAnimator.SetFloat("Speed", direction.sqrMagnitude);
+        }
+
+        if (leftAnimator.gameObject.activeSelf)
+        {
+            leftAnimator.SetFloat("Speed", direction.sqrMagnitude);
+        }
+
+        if (rightAnimator.gameObject.activeSelf)
+        {
+            rightAnimator.SetFloat("Speed", direction.sqrMagnitude);
+        }
     }
 
     private void FixedUpdate()
