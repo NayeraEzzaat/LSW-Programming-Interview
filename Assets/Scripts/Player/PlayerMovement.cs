@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Spriter2UnityDX;
 
 public class PlayerMovement : MonoBehaviour
 {
     [Range(0, 20)]
     public float speed;
     public Rigidbody2D rb;
+    public EntityRenderer entityRenderer;
+
     public Animator playerAnimator;
     public Animator backAnimator;
     public Animator frontAnimator;
@@ -33,5 +36,17 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+    }
+
+    private void LateUpdate()
+    {
+        if (transform.position.y <= -1.1f && entityRenderer.SortingOrder != 12)
+        {
+            entityRenderer.SortingOrder = 12;
+        }
+        else if (transform.position.y > -1.1f && entityRenderer.SortingOrder != 8)
+        {
+            entityRenderer.SortingOrder = 8;
+        }
     }
 }
