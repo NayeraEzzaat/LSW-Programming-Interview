@@ -26,4 +26,7 @@ public class ClothingItemData : ScriptableObject
     public List<PlayerBodyPartType> bodyPartsTypesFront;
     public List<PlayerBodyPartType> bodyPartsTypesLeft;
     public List<PlayerBodyPartType> bodyPartsTypesRight;
+
+    public int buyPrice;
+    public int sellPrice;
 }

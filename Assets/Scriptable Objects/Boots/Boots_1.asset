@@ -30,3 +30,5 @@ MonoBehaviour:
   bodyPartsTypesFront: 0400000007000000
   bodyPartsTypesLeft: 0400000007000000
   bodyPartsTypesRight: 0400000007000000
+  buyPrice: 600
+  sellPrice: 300

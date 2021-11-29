@@ -25,34 +25,22 @@ public class PlayerInventory : MonoBehaviour
     {
         for (int y = 0; y < equippedItem.bodyPartsTypesBack.Count; y++)
         {
-            if (equippedItem.backSprites[y] != null)
-            {
-                ChangeBackSprite(equippedItem.backSprites[y], equippedItem.bodyPartsTypesBack[y]);
-            }
+            ChangeBackSprite(equippedItem.backSprites[y], equippedItem.bodyPartsTypesBack[y]);
         }
 
         for (int y = 0; y < equippedItem.bodyPartsTypesFront.Count; y++)
         {
-            if (equippedItem.frontSprites[y] != null)
-            {
-                ChangeFrontSprite(equippedItem.frontSprites[y], equippedItem.bodyPartsTypesFront[y]);
-            }
+            ChangeFrontSprite(equippedItem.frontSprites[y], equippedItem.bodyPartsTypesFront[y]);
         }
 
         for (int y = 0; y < equippedItem.bodyPartsTypesLeft.Count; y++)
         {
-            if (equippedItem.leftSprites[y] != null)
-            {
-                ChangeLeftSprite(equippedItem.leftSprites[y], equippedItem.bodyPartsTypesLeft[y]);
-            }
+            ChangeLeftSprite(equippedItem.leftSprites[y], equippedItem.bodyPartsTypesLeft[y]);
         }
 
         for (int y = 0; y < equippedItem.bodyPartsTypesRight.Count; y++)
         {
-            if (equippedItem.rightSprites[y] != null)
-            {
-                ChangeRightSprite(equippedItem.rightSprites[y], equippedItem.bodyPartsTypesRight[y]);
-            }
+            ChangeRightSprite(equippedItem.rightSprites[y], equippedItem.bodyPartsTypesRight[y]);
         }
     }
 
@@ -96,6 +84,23 @@ public class PlayerInventory : MonoBehaviour
             if (playerBodyParts.playerRightBodyParts.list[x].type == bodyPartType)
             {
                 playerBodyParts.playerRightBodyParts.list[x].spriteRenderer.sprite = newSprite;
+            }
+        }
+    }
+
+    public void AddItem(ClothingItemData newItem)
+    {
+        inventory.Add(newItem);
+    }
+
+    public void RemoveItem(ClothingItemData removedItem)
+    {
+        for (int x = 0; x < inventory.Count; x++)
+        {
+            if (removedItem == inventory[x])
+            {
+                inventory.RemoveAt(x);
+                break;
             }
         }
     }
