@@ -99,4 +99,9 @@ public class ShopUI : MonoBehaviour
             }
         }
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

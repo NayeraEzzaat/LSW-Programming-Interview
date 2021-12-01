@@ -8,6 +8,7 @@ public class ShopKeeperInventory : MonoBehaviour
     public GameObject talkButton;
 
     private bool isPlayerNearby = false;
+    private bool isShopWindowShown = false;
 
     public void AddItemToInventory(ClothingItemData addedItem)
     {
@@ -49,9 +50,19 @@ public class ShopKeeperInventory : MonoBehaviour
         talkButton.SetActive(false);
     }
 
+    public void ShopWindowShown()
+    {
+        isShopWindowShown = true;
+    }
+
+    public void ShopWindowHidden()
+    {
+        isShopWindowShown = false;
+    }
+
     public void EnableTalkButton()
     {
-        if (isPlayerNearby)
+        if (isPlayerNearby && !isShopWindowShown)
         {
             talkButton.SetActive(true);
         }
