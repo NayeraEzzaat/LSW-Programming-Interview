@@ -9,18 +9,18 @@ public class ShopItem : MonoBehaviour
     public Image icon;
     public TextMeshProUGUI buyPrice;
 
-    [HideInInspector] public int buyPriceValue;
+    [HideInInspector] public ClothingItemData clothingItemData;
 
     public void Remove()
     {
         this.gameObject.SetActive(false);
     }
 
-    public void Add(Sprite newIcon, int newPrice)
+    public void DisplayItem(ClothingItemData newClothingItemData)
     {
+        clothingItemData = newClothingItemData;
         this.gameObject.SetActive(true);
-        buyPriceValue = newPrice;
-        icon.sprite = newIcon;
-        buyPrice.text = buyPriceValue + "";
+        icon.sprite = clothingItemData.displaySprite;
+        buyPrice.text = "-" + clothingItemData.buyPrice;
     }
 }

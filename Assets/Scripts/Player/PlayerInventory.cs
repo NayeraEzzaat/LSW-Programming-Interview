@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerInventory : MonoBehaviour
 {
@@ -8,9 +9,13 @@ public class PlayerInventory : MonoBehaviour
     public List<ClothingItemData> equippedClothes;
     public PlayerBodyParts playerBodyParts;
 
+    public int money;
+    public TextMeshProUGUI moneyText;
+
     void Start()
     {
         EquipClothes();
+        UpdatePlayerMoneyText();
     }
 
     public void EquipClothes()
@@ -23,6 +28,8 @@ public class PlayerInventory : MonoBehaviour
 
     public void EquipItem(ClothingItemData equippedItem)
     {
+        RemoveItemfromEquipped(equippedItem);
+
         for (int y = 0; y < equippedItem.bodyPartsTypesBack.Count; y++)
         {
             ChangeBackSprite(equippedItem.backSprites[y], equippedItem.bodyPartsTypesBack[y]);
@@ -41,6 +48,33 @@ public class PlayerInventory : MonoBehaviour
         for (int y = 0; y < equippedItem.bodyPartsTypesRight.Count; y++)
         {
             ChangeRightSprite(equippedItem.rightSprites[y], equippedItem.bodyPartsTypesRight[y]);
+        }
+
+        AddItemToEquipped(equippedItem);
+    }
+
+    public void UnequipItem(ClothingItemData removedItem)
+    {
+        RemoveItemfromEquipped(removedItem);
+
+        for (int y = 0; y < removedItem.bodyPartsTypesBack.Count; y++)
+        {
+            ChangeBackSprite(null, removedItem.bodyPartsTypesBack[y]);
+        }
+
+        for (int y = 0; y < removedItem.bodyPartsTypesFront.Count; y++)
+        {
+            ChangeFrontSprite(null, removedItem.bodyPartsTypesFront[y]);
+        }
+
+        for (int y = 0; y < removedItem.bodyPartsTypesLeft.Count; y++)
+        {
+            ChangeLeftSprite(null, removedItem.bodyPartsTypesLeft[y]);
+        }
+
+        for (int y = 0; y < removedItem.bodyPartsTypesRight.Count; y++)
+        {
+            ChangeRightSprite(null, removedItem.bodyPartsTypesRight[y]);
         }
     }
 
@@ -88,12 +122,12 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    public void AddItem(ClothingItemData newItem)
+    public void AddItemToInventory(ClothingItemData addedItem)
     {
-        inventory.Add(newItem);
+        inventory.Add(addedItem);
     }
 
-    public void RemoveItem(ClothingItemData removedItem)
+    public void RemoveItemfromInventory(ClothingItemData removedItem)
     {
         for (int x = 0; x < inventory.Count; x++)
         {
@@ -103,5 +137,33 @@ public class PlayerInventory : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public void AddItemToEquipped(ClothingItemData addedItem)
+    {
+        equippedClothes.Add(addedItem);
+    }
+
+    public void RemoveItemfromEquipped(ClothingItemData removedItem)
+    {
+        for (int x = 0; x < equippedClothes.Count; x++)
+        {
+            if (removedItem.type == equippedClothes[x].type)
+            {
+                equippedClothes.RemoveAt(x);
+                break;
+            }
+        }
+    }
+
+    public void UpdatePlayerMoney(int valueAdded)
+    {
+        money = money + valueAdded;
+        UpdatePlayerMoneyText();
+    }
+
+    public void UpdatePlayerMoneyText()
+    {
+        moneyText.text = money + "";
     }
 }
