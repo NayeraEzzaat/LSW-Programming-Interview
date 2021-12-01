@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687b6f912376a344c828d5ee8cd321ab, type: 3}
+  m_Name: Armor_2
+  m_EditorClassIdentifier: 
+  type: 2
+  displaySprite: {fileID: 21300000, guid: d2035ccd4fc5b89439a3eb35743684eb, type: 3}
+  backSprites:
+  - {fileID: 21300000, guid: 12a2485ce931a3e4190529db8e799c26, type: 3}
+  - {fileID: 21300000, guid: 1ec14653320845143a69450d4187bf97, type: 3}
+  - {fileID: 21300000, guid: 05e6c6764d9cd1143a905c90488af2be, type: 3}
+  - {fileID: 21300000, guid: e8a707663241dc6468f649d54a3c9daf, type: 3}
+  - {fileID: 21300000, guid: 09fe4449a6a3d8649bf973e28de20121, type: 3}
+  frontSprites:
+  - {fileID: 21300000, guid: 6c67169e2db9114419758eba2b296f7e, type: 3}
+  - {fileID: 21300000, guid: c13ff55dce9971d49b5d6622e1c5bbad, type: 3}
+  - {fileID: 21300000, guid: 6e3a67b20604bfc4b91c26ff7c5b6d74, type: 3}
+  - {fileID: 21300000, guid: e373bf1f10cff1d49ab4164e3b048343, type: 3}
+  - {fileID: 21300000, guid: bc1cb06682f6fa74dba7c6826346f86c, type: 3}
+  leftSprites:
+  - {fileID: 21300000, guid: eac08ba0e5508124890d6dfaede4bb8f, type: 3}
+  - {fileID: 21300000, guid: 898ba4b6502447f4284aa0ee9a4c9c16, type: 3}
+  - {fileID: 21300000, guid: 7f0839b6c36329e4d906fd8847fcca5a, type: 3}
+  - {fileID: 21300000, guid: 898ba4b6502447f4284aa0ee9a4c9c16, type: 3}
+  - {fileID: 21300000, guid: eac08ba0e5508124890d6dfaede4bb8f, type: 3}
+  rightSprites:
+  - {fileID: 21300000, guid: 88d88a75bc78de44e82b544c5cded405, type: 3}
+  - {fileID: 21300000, guid: e55cc0d3ce213e64bab6a80eda28fcd0, type: 3}
+  - {fileID: 21300000, guid: e1ff02f6bed18f94a82ca74674367849, type: 3}
+  bodyPartsTypesBack: 0300000002000000000000000500000006000000
+  bodyPartsTypesFront: 0300000002000000000000000500000006000000
+  bodyPartsTypesLeft: 0300000002000000000000000500000006000000
+  bodyPartsTypesRight: 030000000200000000000000
+  buyPrice: 1000
+  sellPrice: 500

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687b6f912376a344c828d5ee8cd321ab, type: 3}
+  m_Name: Boots_1
+  m_EditorClassIdentifier: 
+  type: 3
+  displaySprite: {fileID: 21300000, guid: fbb91a5b7e820e3469c2a00538b52b15, type: 3}
+  backSprites:
+  - {fileID: 21300000, guid: ab0fd45d9a0d2204fb569e0b2a139bcf, type: 3}
+  - {fileID: 21300000, guid: c2052ed1a18cade4994d891717ee5810, type: 3}
+  frontSprites:
+  - {fileID: 21300000, guid: 1d8f4a9bca68b404ca666526cd98b132, type: 3}
+  - {fileID: 21300000, guid: daa0f0aacbc3b254482bc12d9b034fa4, type: 3}
+  leftSprites:
+  - {fileID: 21300000, guid: 833ecde9d47dab94a9ca2c5b2ef40fb8, type: 3}
+  - {fileID: 21300000, guid: faecdc3d19d13774dae40e33d446594e, type: 3}
+  rightSprites:
+  - {fileID: 21300000, guid: 03ed65a1459067d46bd8ee6454cc096f, type: 3}
+  - {fileID: 21300000, guid: 9d0b63e953792ee4a93ded6bbd56fce2, type: 3}
+  bodyPartsTypesBack: 0400000007000000
+  bodyPartsTypesFront: 0400000007000000
+  bodyPartsTypesLeft: 0400000007000000
+  bodyPartsTypesRight: 0400000007000000
+  buyPrice: 600
+  sellPrice: 300

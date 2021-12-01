@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687b6f912376a344c828d5ee8cd321ab, type: 3}
+  m_Name: Sword_2
+  m_EditorClassIdentifier: 
+  type: 1
+  displaySprite: {fileID: 21300000, guid: 011d493a360f9d84eaa739eed81483bf, type: 3}
+  backSprites:
+  - {fileID: 21300000, guid: 5d44cede53b4d5048aa573e14f6d37c6, type: 3}
+  frontSprites:
+  - {fileID: 21300000, guid: d363a40593d006344bb6de9be3214038, type: 3}
+  leftSprites:
+  - {fileID: 21300000, guid: 96c31c09ae5918740afb10c67e8b04df, type: 3}
+  rightSprites:
+  - {fileID: 21300000, guid: 69d214f530d0b5d4983e2b6859bcb9cb, type: 3}
+  bodyPartsTypesBack: 0b000000
+  bodyPartsTypesFront: 0b000000
+  bodyPartsTypesLeft: 0b000000
+  bodyPartsTypesRight: 0b000000
+  buyPrice: 1000
+  sellPrice: 500

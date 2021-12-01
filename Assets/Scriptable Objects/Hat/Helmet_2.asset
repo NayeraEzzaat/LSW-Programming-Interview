@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687b6f912376a344c828d5ee8cd321ab, type: 3}
+  m_Name: Helmet_2
+  m_EditorClassIdentifier: 
+  type: 0
+  displaySprite: {fileID: 21300000, guid: d09ab62572086d742a295d9d557c3099, type: 3}
+  backSprites:
+  - {fileID: 21300000, guid: bdacfb6fe6d96cb4688be338fa6859a0, type: 3}
+  frontSprites:
+  - {fileID: 21300000, guid: 8a5a77dd55c72b24882eb2204800ec60, type: 3}
+  leftSprites:
+  - {fileID: 21300000, guid: ea3a2d164223dce4da71f53af60a11f2, type: 3}
+  rightSprites:
+  - {fileID: 21300000, guid: ff99fe10b406ac941bd937b5e8a6f3af, type: 3}
+  bodyPartsTypesBack: 01000000
+  bodyPartsTypesFront: 01000000
+  bodyPartsTypesLeft: 01000000
+  bodyPartsTypesRight: 01000000
+  buyPrice: 1000
+  sellPrice: 500
